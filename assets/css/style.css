@@ -1,0 +1,7 @@
+body {
+    background: Url('../images/openingBG.jpeg');
+    background-size: cover;
+}
+.question-table {
+    background-color: rgb(0,0, 0, 0.5);
+}
