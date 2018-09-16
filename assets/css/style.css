@@ -1,46 +1,52 @@
 body {
-	background-image: url("../images/openingBG.jpeg");
-	text-align: center;
+    background-image: url(../images/openingBG.jpeg);
     background-size: cover;
-    background-repeat: no-repeat;
-    font-family: 'Quantico', sans-serif;
-}
-header {
-	color:white;
-    text-shadow: gray 0.5em 0.5em 0.5em;
-	padding-top: 20px;
-}
-section {
-    background-color: rgb(39, 39, 39, 0.7);
-    border-radius: 10px;
-}
-#timer {
-    color: #fff;
-    font-weight: bold;
-    font-size: 20px;
 }
 
-#countdown {
-    font-size: 36px
+.jumbotron{
+    color:white;
+    background-color: rgba(27, 27, 27, 0.6);
+}
+.container{
+    color:white;
+    background-color: rgba(15, 51, 104, 0.9);
+}
+.jumbotron > h1 {
+    color:white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+}
+.jumbotron > p {
+    color:white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+
+} 
+
+#mainArea > p > a {
+    color:white;
+    font-size: 48px;
 }
 
-#questions {
-    color:#fff;
-    font-size: 18px;
+.center-block{
+    margin: auto;
+    display: block;
 }
 
-#results {
-    color: #fff;
+.timer-style {
+    color:white;
+    font-size: 62px;
 }
 
-#restart {
-    color: black;
+#answers-style {
+    color:white;
+    font-size: 40px;
 }
-button {
-    background-color: rgb(71, 71, 255);
-    margin: 6px;
-    border-radius:5px;
+#answers-style:hover{
+    background-color: rgb(46, 94, 226, .4);
 }
-button:hover {
-    background-color: rgb(71, 71, 255,0.8);
+
+#question-style {
+    font-size: 38px;
 }
