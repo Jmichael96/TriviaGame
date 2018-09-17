@@ -2,31 +2,44 @@ body {
     background-image: url(../images/openingBG.jpeg);
     background-size: cover;
 }
+header {
+    font-family: 'Graduate', cursive;
 
+}
+button {
+    margin: 4px;
+    color:white;
+    background-color: rgba(15, 51, 104, 0.9)
+}
+button:hover {
+    background-color: rgb(100, 0, 0, .8);
+}
 .jumbotron{
     color:white;
     background-color: rgba(27, 27, 27, 0.6);
 }
-.container{
+#container{
     color:white;
     background-color: rgba(15, 51, 104, 0.9);
 }
 .jumbotron > h1 {
     color:white;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 50px;
+    font-family: 'Graduate', cursive;
+    font-size: 45px;
     font-weight: 800;
 }
 .jumbotron > p {
     color:white;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 40px;
+    font-family: 'Graduate', cursive;
+    font-size: 36px;
 
-} 
+}
+ 
 
 #mainArea > p > a {
+    font-family: 'Special Elite', cursive;
     color:white;
-    font-size: 48px;
+    font-size: 42px;
 }
 
 .center-block{
@@ -35,11 +48,13 @@ body {
 }
 
 .timer-style {
+    font-family: 'Graduate', cursive;
     color:white;
-    font-size: 62px;
+    font-size: 50px;
 }
 
 #answers-style {
+    font-family: 'Special Elite', cursive;
     color:white;
     font-size: 40px;
 }
@@ -48,5 +63,6 @@ body {
 }
 
 #question-style {
+    font-family: 'Graduate', cursive;
     font-size: 38px;
 }
