@@ -138,7 +138,7 @@ $(document).ready(function() {
     //if user is lazy and doesnt select anything we generate a timeout loss and user gets deducted for an unanswered question
     function timeoutLoss() {
         unanswerd++;
-        gameHTML = "<p class='text-center timer-p timer-style'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center' id='question-style'>You ran out of time!  The correct answer was: " + correctAnswers[questionCounter] + "</p>" + "<img class='center-block img-fluid img-wrong' src='./assets/images/x.gif'>";
+        gameHTML = "<p class='text-center timer-p timer-style'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center' id='question-style'>You ran out of time!  The correct answer was: " + correctAnswers[questionCounter] + "</p>";
         $("#mainArea").html(gameHTML);
         setTimeout(wait, 3000);  
     }
@@ -155,7 +155,7 @@ $(document).ready(function() {
     //if user guess is incorrect we generate a loss
     function generateLoss() {
         incorrect++;
-        gameHTML = "<p class='text-center timer-p timer-style'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center' id='question-style'>Wrong! The correct answer is: "+ correctAnswers[questionCounter] + "</p>" + "<img class='center-block img-fluid img-wrong' src='./assets/images/x.gif'>";
+        gameHTML = "<p class='text-center timer-p timer-style'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center' id='question-style'>Wrong! The correct answer is: "+ correctAnswers[questionCounter] + "</p>";
         $("#mainArea").html(gameHTML);
         setTimeout(wait, 3000);
         console.log("You Guessed Incorrect ! " + incorrect);  
