@@ -141,7 +141,7 @@ $(document).ready(function() {
         gameHTML = "<p class='text-center timer-p timer-style'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center' id='question-style'>You ran out of time!  The correct answer was: " + correctAnswers[questionCounter] + "</p>";
         $("#mainArea").html(gameHTML);
         setTimeout(wait, 3000);  
-    }
+    };
     //if user guess is correct we generate a win! woop woop
     function generateWin() {
         correct++;
@@ -150,7 +150,7 @@ $(document).ready(function() {
         winSound.play(3000);
         setTimeout(wait, 3000);
         console.log("You Guessed Correct! " + correct);  
-    }
+    };
     
     //if user guess is incorrect we generate a loss
     function generateLoss() {
@@ -160,18 +160,15 @@ $(document).ready(function() {
         setTimeout(wait, 3000);
         console.log("You Guessed Incorrect ! " + incorrect);  
  
-    }
-    
+    };
     //generates and displays questions
     function generateQuestions() {
         gameHTML = "<p class='text-center timer-p timer-style'>Time Remaining: <span class='timer'>30</span></p><p class='text-center' id='question-style'>" + questionArray[questionCounter] + "</p><p class='first-answer answer' id='answers-style'>A. " + answerArray[questionCounter][0] + "</p><p class='answer' id='answers-style'>B. "+answerArray[questionCounter][1]+"</p><p class='answer' id='answers-style'>C. "+answerArray[questionCounter][2]+"</p><p class='answer' id='answers-style'>D. "+answerArray[questionCounter][3]+"</p>";
         $("#mainArea").html(gameHTML);
         winSound.pause();
-    };
-    
+    };    
     //generating the wait function for each question and moving on to the next question
     function wait() {
-
     if(questionCounter < 9){ 
         questionCounter++;
         generateQuestions();
@@ -180,7 +177,7 @@ $(document).ready(function() {
     }
     else{    
        finalScreen();
-    }
+    };
     }; 
 
     //my timer function
@@ -195,13 +192,13 @@ $(document).ready(function() {
                 counter--;
             }
             $(".timer").html(counter);
-        }
-    }
+        };
+    };
     //end game screen with results
     function finalScreen() {
         gameHTML =  "<p class='text-center timer-style'>Your Final Results!" + "</p>" + "<p class='summary-correct' id='question-style'>Correct Answers: " + correct + "</p>" + "<p id='question-style'>Wrong Answers: " + incorrect + "</p>" + "<p id='question-style'>Unanswered: " + unanswerd + "</p>" + "<p class='text-center reset-button-container'><a class='btn btn-md btn-block reset-button' href='#' role='button'>Reset The Quiz!</a></p>";
         $("#mainArea").html(gameHTML);
-    }
+    };
     // optional reset game button
     function resetGame() {
         questionCounter = 0;
