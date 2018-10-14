@@ -6,6 +6,7 @@ header {
     font-family: 'Graduate', cursive;
 
 }
+/* buttons for the questions */
 button {
     margin: 4px;
     color:white;
@@ -14,6 +15,7 @@ button {
 button:hover {
     background-color: rgb(100, 0, 0, .8);
 }
+/* jumbotron style */
 .jumbotron{
     color:white;
     background-color: rgba(27, 27, 27, 0.6);
@@ -34,25 +36,24 @@ button:hover {
     font-size: 36px;
 
 }
- 
-
+/* calling the elements that needed a font change */
 #mainArea > p > a {
     font-family: 'Special Elite', cursive;
     color:white;
     font-size: 42px;
 }
-
+/* center piece for the questions and answers */
 .center-block{
     margin: auto;
     display: block;
 }
-
+/* timer display style */
 .timer-style {
     font-family: 'Graduate', cursive;
     color:white;
     font-size: 50px;
 }
-
+/* all the answers font styling */
 #answers-style {
     font-family: 'Special Elite', cursive;
     color:white;
@@ -61,7 +62,7 @@ button:hover {
 #answers-style:hover{
     background-color: rgb(46, 94, 226, .4);
 }
-
+/* all the quesitons font styling */
 #question-style {
     font-family: 'Graduate', cursive;
     font-size: 38px;
