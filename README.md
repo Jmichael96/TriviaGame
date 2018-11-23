@@ -1,7 +1,8 @@
 # Supercross Trivia Game!!
 
 ## Click to Play! [Trivia](https://jmichael96.github.io/TriviaGame/)
-
+## LANGUAGES/LIBRARIES USED
+-
 ### About the Game
 This trivia game is about specific rules and information reguarding supercross. 
 Click on "Start Trivia Game" at the bottom of the starting page. 
